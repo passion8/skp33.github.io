@@ -11,7 +11,7 @@ permalink: /about/
 tags: [about-me]
 
 header:
-  image: /assets/images/IMG_2351.jpg
+  overlay_image: /assets/images/IMG_2351.jpg
 
 comments: false
 ---

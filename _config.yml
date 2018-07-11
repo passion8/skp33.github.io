@@ -21,7 +21,7 @@ title_separator          : "-"
 name                     : "Kaushal Prajapati"
 description              : "An amazing website."
 url                      : "http://kprajapati.com"
-baseurl                  : "/blog"
+baseurl                  : # "/blog"
 repository               : "skp33/skp33.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)

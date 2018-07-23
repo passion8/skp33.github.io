@@ -39,7 +39,7 @@ res4: Any = false
 ```
 
 
-Here is an another example in which i am evaluating a udf:
+Here is another example in which i am evaluating a udf:
 
 ```scala
 scala> :paste

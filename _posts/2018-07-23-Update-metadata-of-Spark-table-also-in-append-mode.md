@@ -58,7 +58,8 @@ val tillProcessDate = spark.read.table("daily_order_count")
   .schema("date").metadata.getLong("max_dt")
 ```
 
-So you must've noticed that I used *overwrite* mode to update my table. This will update my data as well as my schema according to the details I specify. 
+So you must've noticed that I used **overwrite** mode to update my table. This will update my data
+ as well as my schema according to the details I specify. 
 
 But what about the append mode? 
 There could also be a case where you don't want to drop the data but just want to new data alongwith new table metadata details.
@@ -82,8 +83,8 @@ object UpdateSparkMetadata {
 }
 ```
 
-So in above example, I simply created an object using *org.apache.spark.sql* package.
-Note that this package includes a developer API called **sessionState**. In this package we have *SessionCatalag* object which provides us a method called *alterTableSchema*, which accepts *TableIdentifier* and *Schema* as it's method parameters.
+So in above example, I simply created an object using **org.apache.spark.sql** package.
+Note that this package includes a developer API called **sessionState**. In this package we have **SessionCatalag** object which provides us a method called **alterTableSchema**, which accepts **TableIdentifier** and **Schema** as it's method parameters.
 
 ```scala
 val moreOrders = (data ++ Seq((2, 20180417), (41, 20180417), (25, 20180417),
